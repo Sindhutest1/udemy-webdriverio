@@ -1,0 +1,5 @@
+- Writing test cases in Mocha framework 
+- https://mochajs.org/#getting-started
+- Mocha has 2 main component in Spec file
+- describe - it is called as test suite and can have multiple test cases or nested test suite
+- it - it is called as test cases 
