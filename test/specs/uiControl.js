@@ -1,3 +1,5 @@
+const expectchai = require('chai').expect
+
 describe('Ecommerce application', () => 
 {
     it('UI Controls', async () =>
@@ -24,5 +26,16 @@ describe('Ecommerce application', () =>
         // Restrict the pop as previous action was confirmed
         await radioButtons[0].$(".radiotextsty").click();
         await expect(modal).not.toBeDisplayed();
+
+        const dropdown = $('select.form-control');
+        await dropdown.selectByAttribute('value', 'teach');
+        browser.pause(3000);
+        await dropdown.selectByVisibleText('Consultant');
+        browser.pause(3000);
+        await dropdown.selectByIndex(0);
+        browser.pause(3000);
+        await dropdown.getValue();
+        expectchai(await dropdown.getValue()).to.equal("stud")
+
     })
 })

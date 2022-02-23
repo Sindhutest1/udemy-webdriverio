@@ -50,6 +50,17 @@ Handle elements selection
 - Single $ - will handle 1 element in the page
 - Double $$ - will handle all elements which matches
 
+Handle static dropdowns
+- The options are already present in dropdown - static dropdown
+- The options display as per user input - dynamic dropdowns
+- selectByAttribute('value', 'teach')
+- selectByVisibleText('text')
+- selectByIndex(0)
+- Chai is one library which supports assertions
+- Chai official website - https://www.npmjs.com/package/chai
+- Install - npm install --save-dev chai - helps to save in package.json dependencies.
+
+
  
 
 
