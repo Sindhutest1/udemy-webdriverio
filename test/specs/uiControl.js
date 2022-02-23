@@ -38,7 +38,7 @@ describe('Ecommerce application', () =>
         expectchai(await dropdown.getValue()).to.equal("stud")
 
     })
-    it('Dynamic dropdowns', async () =>
+    xit('Dynamic dropdowns', async () =>
     {
         await browser.url("https://rahulshettyacademy.com/AutomationPractice/");
         await $("#autocomplete").setValue("ind");
@@ -53,5 +53,14 @@ describe('Ecommerce application', () =>
         await desiredvalue[1].click();
         await browser.pause(3000);
     
+        })
+        it('Checkboxes Identification', async() =>
+        {
+            await browser.url("https://rahulshettyacademy.com/AutomationPractice/");
+            const checkbox = await $$("input[type='checkbox']");
+            checkbox[1].click();
+            console.log(await checkbox[1].isSelected());
+            console.log(await checkbox[2].isSelected());
+            await browser.saveScreenshot("Screenshot.png");
         })
 })

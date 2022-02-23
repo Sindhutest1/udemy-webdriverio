@@ -66,6 +66,10 @@ Handle Dynamic Dropdowns:
 - Use filter array to compare the string in the dropdown
 - Variable.filter(item=> item.gettext() === "stringvalue")
 
+Handle Checkbox and screenshots:
+- To check checkbox selected - isSelected()
+- To take screenshot of each line - browser.savescreenshot("screenshot.png")
+
 
  
 
