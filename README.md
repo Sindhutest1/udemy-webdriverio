@@ -60,6 +60,12 @@ Handle static dropdowns
 - Chai official website - https://www.npmjs.com/package/chai
 - Install - npm install --save-dev chai - helps to save in package.json dependencies.
 
+Handle Dynamic Dropdowns:
+- Xpath - Provide "/" B/W the parent to child element
+- CSS - provide space b/w the parent to child element
+- Use filter array to compare the string in the dropdown
+- Variable.filter(item=> item.gettext() === "stringvalue")
+
 
  
 
