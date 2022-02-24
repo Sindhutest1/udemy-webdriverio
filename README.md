@@ -70,6 +70,12 @@ Handle Checkbox and screenshots:
 - To check checkbox selected - isSelected()
 - To take screenshot of each line - browser.savescreenshot("screenshot.png")
 
+Understand Mouse Hover and scrolling to invisble object:
+- Scrollintoview()- use to scroll for object display.
+- Moveto() - Hoverover
+- $('=') - linktext
+- Add Relative path of each file in conf.js file to execute only 1 file
+
 
  
 

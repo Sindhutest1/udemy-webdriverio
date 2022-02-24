@@ -54,7 +54,7 @@ describe('Ecommerce application', () =>
         await browser.pause(3000);
     
         })
-        it('Checkboxes Identification', async() =>
+        xit('Checkboxes Identification', async() =>
         {
             await browser.url("https://rahulshettyacademy.com/AutomationPractice/");
             const checkbox = await $$("input[type='checkbox']");
