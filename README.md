@@ -82,6 +82,11 @@ Handle Javascript Related Alerts:
 - getAlertText() - Grab text in the Alert
 - acceptAlert() - To click Ok button in the alert
 
+Apply Sort in Web tables:
+- xpath parent to child - //tr/th[1] - 1st header
+- Css - tr th:nth-child(1)
+- Map - To retrive new result from existing result
+
 
 
  
