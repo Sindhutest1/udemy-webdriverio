@@ -59,6 +59,7 @@ Handle static dropdowns
 - Chai is one library which supports assertions
 - Chai official website - https://www.npmjs.com/package/chai
 - Install - npm install --save-dev chai - helps to save in package.json dependencies.
+- Chai assertion library - https://www.chaijs.com/api/bdd/#method_true
 
 Handle Dynamic Dropdowns:
 - Xpath - Provide "/" B/W the parent to child element
@@ -75,6 +76,12 @@ Understand Mouse Hover and scrolling to invisble object:
 - Moveto() - Hoverover
 - $('=') - linktext
 - Add Relative path of each file in conf.js file to execute only 1 file
+
+Handle Javascript Related Alerts:
+- isAlertOpen() - Alert is opened in the window
+- getAlertText() - Grab text in the Alert
+- acceptAlert() - To click Ok button in the alert
+
 
 
  
