@@ -87,6 +87,13 @@ Apply Sort in Web tables:
 - Css - tr th:nth-child(1)
 - Map - To retrive new result from existing result
 
+Debugging WDIO With VS Code
+- Official Website - https://webdriver.io/docs/debugging/
+- Windows/linux - Install https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly
+- Add piece of code - Create folder => .vscode => launch.json =>Add configuration button
+- The slice() method returns selected elements in an array, as a new array.
+- The slice() method selects from a given start, up to a (not inclusive) given end.
+- The slice() method does not change the original array.
 
 
  

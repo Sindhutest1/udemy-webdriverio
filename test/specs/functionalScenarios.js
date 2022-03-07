@@ -28,17 +28,19 @@ describe('Functional testing of application', () =>
     { 
      await browser.url("https://rahulshettyacademy.com/seleniumPractise/#/offers");
      await $("tr th:nth-child(1)").click();
-     await browser.pause(3000);
+     //await browser.pause(3000);
      //retrive list of veggiee names into Array A
      //Sort the Array A => Array B
      //Compare Array A with Array B
      const veggieeLocators = await $$("tr td:nth-child(1)");
-     const veggieeNames = veggieeLocators.map(async veggiee=> await veggiee.getText());
-     const Arrayvegiee = await Promise.all(veggieeNames);
-     console.log(Arrayvegiee);
-     sortVeggiees = Arrayvegiee.sort();
+     let OrginalveggieeNames = veggieeLocators.map(async veggiee=> await veggiee.getText());
+     OrginalveggieeNames = await Promise.all(OrginalveggieeNames);
+     console.log(OrginalveggieeNames);
+     veggiee = OrginalveggieeNames.slice();
+     //Arrays are pass by reference
+     sortVeggiees = veggiee.sort();
      console.log(sortVeggiees);
-     expectchai(Arrayvegiee).to.equal(sortVeggiees);
+     expectchai(OrginalveggieeNames).to.eql(sortVeggiees);
      
 
     })
